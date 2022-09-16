@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image:url("backg.jpg"); 
+            background-position: center;
+            
+        }
+        #header{
+            border: 0px solid black;
+            height: auto;
+            background-color: white;
+            box-shadow: 0 0 10px 0 white;
+            text-align:center;
+            
+        }
+        #heading{
+            color: rgba(6, 123, 158, 0.754);
+            /* margin-bottom:90px; */
+            font-size: xx-large;
+
+        }
+        /* #header #btn-con{
+            background-color: transparent;
+            height: 95px
+            
+        } */
+        button{
+            border-radius: 40px;
+            margin-bottom: 20px;
+            background-color: rgb(36, 156, 221);
+            padding:10px;
+            margin-right:10px;
+            width:150px;
+            color:black;
+        }
+        a{
+            text-decoration:none;
+        }
+        .content{
+            width: 70%;
+            height:auto;
+            /* border: 1px solid black; */
+            margin-left:auto;
+            margin-right:auto;
+            background-color:white;
+            padding:30px;
+        }
+        .content img{
+            margin-top:20px; 
+            margin-left:100px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Overview of the AntiChain</h2>
+        <p>By Charles Emmanuel Jason</p>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div class="content">
+        <h3>Introduction</h3>
+        <br>
+        <h4><ins>Bitcoin: The First revolution</ins></h4>
+        <p>
+            The Bitcoin network originally developed by Satoshi Nakamoto implores the use of 
+            the Blockchain technology, Bitcoin harmonizes it's distinct and seperate components borrowed from
+            other fields such as crytography, distributed systems, gossip protocols, economics,
+            mathematics and so on to form such holistic masterpiece.
+            In my own term I call a masterpiece such as Bitcoin an example of "clever cannibalism"(cannibalism in this context involves using parts from different systems to create another system).
+            The challenges of double spend, consensus, digital asset replication and to mention a few were solved with the innovative solutions of the Bitcoin creator, I must say this is a work of pure genius.
+            But this innovation was not without it's drawbacks, from my research into web3 and its components, this was when I discovered what the internet truly is, the very act of having more than one computer communicate and exchange information over a network makes an internet,
+            Bitcoin achieves this but with a key difference it's decentralized. Though from a different perspective it still conforms to the idea of an internet.
+            One would ask since computers in a network shares information such as video, image, text files etc, what is shared on the Bitcoin network.
+            Well the intent of it's creator was to create an alternative to traditional financial systems such as banks and enable the use of digital currencies without trusting a third party,
+            the Bitcoin network shares a copy of the blockchain containing transactions made by participants of the network, so in this regard the network participants receives the copy of the blockchain as a it's major information.
+            With all the initial requirements for the creation of a peer to peer network for the transferrence of digital assest satisfied, Satoshi's work was done and his statement heard, one would have thought this is the end but then came Ethereum.
+        </p>
+        <br>
+        <h4><ins>Ethereum: The Second revolution</ins></h4>
+        <p>On the shoulders of Bitcoin, Ethereum stands.
+            Vitalik Buturin took the first revolution a step further, remember from the above definition of an internet,
+            the Bitcoin settled for financial use case, in doing so it shut out and limited severely other use case of it's internet, 
+            Vitalik saw this and worked on it, all application on the internet are built with code a computer can understand and execute, this new found internet <b>Web3</b>, needed
+            to exhibit this property too to cater for other use cases.
+            Eventually Smart Contracts were introduced, which is a piece of code running on the a blockchain. Web2
+            has an advantage which is the ability to run computation or execute tasks from a dedicated computer called a <ins>Server</ins>, thereby it's system architecture of client-server 
+            enables for decoupling and seperation of concerns, whereas on the Ethereum network, it's participants (nodes) are both client and server at the same time, this tradeoff comes with it's advantages and disadvantages.
+            One disadvantage is since the programming language used to create it's smart contracts is turing complete, that means loops are supported, a malicioius user can grind the network to a halt by running an infinite loop.
+            The Ethereum team thought of this and decided to make it economically expensive to do so by using <ins>Gas</ins>, which is basically paying for computational efforts, when the gas for the computation runs out the program stops and it's state is reverted.
+            One would think since most blockchain store transactions, how can applications be built on such a network,
+            following first principles the Ethereum team made smart contract own addresses but this time, it received payments to run computations, the blockchain records this transaction too as a valid one since it has an address.
+            This innovative solution gave the Third Web the leap it needed, very soon other blockchains began to spring up.
+            Initially I thought you had to create your own programming language such Script or Solidity but then I stumbled on Solana built with Rust majorly, and then it hit me that more can be achieved. 
+        </p><br>
+        <h4><ins>Antichain: A descendant of chains </ins></h4>
+        <h5>AIM:</h5>
+        <p>The goal is to investigate and recreate opposites of the Blockchain, and harmonize them into a working solution with real life applications.
+            The Antichain is not a competitor to the Blockchain but rather an "original" altenative
+        </p>
+        <br>
+        <h5>BLOCKCHAIN</h5>
+        <br>
+        <p>
+            <b>1.</b> Every known Blockchain all began with a genesis block, being the root of all other blocks on the chain onwards,
+            it serves as a major source of truth, that if a block cannot be traced back to the genesis block it is considered invalid, this works.
+            <br>
+            <br>
+            <b>2.</b> Also it is computational difficulty to append to the Blockchain, it is required, for instance
+            on the Bitcoin network that implements a proof of work - consensus algorithm, for miners to compute the hash of a block below a target.
+            This leads to a network wide competition though this method keeps the network safe , it's side-effects is energy wastage
+            <br>
+            <br>
+            <b>3.</b> There is clear distinction between nodes on a given Blockchain, in which majority of the nodes fall under two categories namely:
+            <b>Full nodes</b> and <b>Simple Payment Verification (SPV) nodes</b>.<p>This distinction makes Blockchain fail to harness the power of it's network participants in this case devices. For instance web2 has more devices connected and running largely because of servers that helps out in seperating conerns, for 
+                this and other reasons, it is easier to scale, upgrade and perform more computationally intensive task.
+                As a large portion of most Blockchains network participants are SPVs, it seems wasteful as they are not particularly "involved" in network activities.
+            </p>
+            <br>
+            <br>
+            <h5>ANTICHAIN</h5><br>
+            An Antichain is type of peer to peer network that works in opposite of a Blockchain. It's ancestor is append only, an 
+            Antichain doesn't consists of blocks but rather cells.<br>
+            <b>Cells</b><br>
+            Cells just like a nodes on a Blockchain network are participants on the Antichain. Each cell has the following:
+                <li>Owner</li> 
+                <li>Gatekeeper</li>
+                <li>Drain</li>
+                <li>Overload status indicator</li>
+                <li>Address</li>
+                <li>Path (cell ID)</li>
+                <li>Transaction Pool</li>
+                <li>And other metadata.</li>
+            Anyone in the world can create a cell, every cell is in either of two states <i>live</i>
+ or <i>not live</i>, all cells starts out in a <i>not live</i> state.
+            The Antichain consist of active cells which carry out network activities, on "chain"
+            each cell must be actively involved, as if they are not they face deactivation and lose of "rights". From a financial use case,
+            let's take an example of how the cells works, Cell A creates a transaction that is bound to Cell B, pushes it to it's mempool and tells Cell B about it.
+            For Cell B to be able to receive the payment, it performs "cell knocking" operation which involves supplying the right parameters to the gatekeeper of Cell A, 
+            if valid, the gatekeeper of Cell A generates a witness object which consists of a list of paths and a nonce.
+            Cell B receives this, for instance a basic "ver" field will contain <b>[path1, path2, path3, path4, nonce]</b>, the quantity of paths is dependent on the preference of the Cell owner and the amount of coin being sent. 
+            Since the Gatekeeper of a cell is responsible for randomly generating a list of paths and nonce, <i>Note: A path is basically the ID of a cell</i>, with the witness object Cell B can commence on a "witnessing journey", which is
+            simply an action where one cell takes a witness object from another cell, goes to other cells whose path are listed in the witness object, having
+            them divide, the nonce is divided by a random divisor from that cell the value returned is a "dinonce" which is sent to the cell that's on a "witnessing journey", while the divisor is sent to the originator of the witness object, in return the cell is able to download transaction data.
+            The process continues until all cells in the witness object has returned a divisor and a "dinonce", the recipient cell gathers these "dinonce" and presents them 
+            back to the gatekeeper of the originating cell, if valid the transaction is pushed to drain and the accounts of both sender and receiver are updated accordingly.
+
+
+
+
+        </p>
+        <br>
+        <p>Check out a series of short videos explaining Antichain in a nutshell: <a href="https://www.youtube.com/channel/UCIpcNckWbJC2l4HKCje-BTQ">videos here</a></p>
+        <p>Also you can generate a cell ID, and kindly keep it safe <a href="antichain.html">here</a></p>
+        <p>Or check out Block Tinder <a href="welcome.html">here</a></p>
+    </div>
+</body>
+</html>
